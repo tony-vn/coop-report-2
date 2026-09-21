@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tony Nguyen's Summer 2026 co-op work term report for Momentum Worldwide." />
+  <title>Tony Nguyen — Co-op Work Term Report 2 — Momentum Worldwide (Summer 2026)</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23032D60'/%3E%3Cpath d='M16 44V20h7l9 13 9-13h7v24h-8V32L32 43 24 32v12z' fill='%2300A1E0'/%3E%3C/svg%3E">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      /* Salesforce-inspired colors */
+      --sf-blue: #00A1E0;
+      --sf-blue-dark: #0176D3;
+      --sf-navy: #032D60;
+      --sf-bg: #F6F9FC;
+      --sf-border: rgba(3,45,96,.14);
+      --sf-soft: rgba(0,161,224,.10);
+      --radius: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body{
+      background: var(--sf-bg);
+      color: #102A43;
+    }
+
+    .navbar{
+      background: #fff;
+      border-bottom: 1px solid var(--sf-border);
+    }
+
+    .brand-dot{
+      width: 12px; height: 12px; border-radius: 999px;
+      background: var(--sf-blue);
+      display: inline-block;
+      box-shadow: 0 0 0 4px rgba(0,161,224,.15);
+    }
+
+    .hero{
+      background: linear-gradient(120deg, var(--sf-navy), var(--sf-blue-dark) 55%, var(--sf-blue));
+      color: #fff;
+    }
+
+    .card{
+      border: 1px solid var(--sf-border);
+      border-radius: var(--radius);
+    }
+
+    .section-title{
+      color: var(--sf-navy);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .img-ph{
+      border-radius: var(--radius);
+      border: 1px dashed rgba(3,45,96,.28);
+      background: linear-gradient(135deg, rgba(0,161,224,.10), rgba(1,118,211,.07));
+      min-height: 180px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: rgba(3,45,96,.75);
+      font-weight: 700;
+    }
+
+    .caption{
+      font-size: .92rem;
+      color: rgba(3,45,96,.72);
+    }
+
+    .pill{
+      display:inline-block;
+      padding: .35rem .65rem;
+      border-radius: 999px;
+      background: var(--sf-soft);
+      border: 1px solid rgba(0,161,224,.22);
+      color: var(--sf-white);
+      font-weight: 600;
+      font-size: .9rem;
+      margin-right: .4rem;
+      margin-bottom: .4rem;
+    }
+
+    .anchor-offset{
+      scroll-margin-top: 86px;
+    }
+
+    .footer{
+      border-top: 1px solid var(--sf-border);
+      background: #fff;
+    }
+
+    /* Make bold stand out slightly without shouting */
+    strong { color: #0B2E5E; }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#top">
+      <span class="brand-dot"></span>
+      Tony Nguyen — Co-op Work Term Report 2
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
+        <li class="nav-item"><a class="nav-link" href="#employer">Employer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+        <li class="nav-item"><a class="nav-link" href="#job">Job</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ack">Acknowledgments</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="top" class="hero py-5">
+  <div class="container py-2">
+    <div class="row g-3 align-items-center">
+      <div class="col-lg-8">
+        <h1 class="display-6 fw-bold mb-2">Momentum Worldwide — Summer 2026</h1>
+        <p class="mb-3">
+          Data Analyst co-op focused on <b>product analytics</b>, <b>data quality</b>, and the end-to-end delivery
+          of a weekly executive dashboard for <b>WorkMoney</b>.
+        </p>
+        <div>
+          <span class="pill">Remote (Hybrid-Optional)</span>
+          <span class="pill">WorkMoney Analytics</span>
+          <span class="pill">GA4 • GTM • Data Studio</span>
+          <span class="pill">Claude AI</span>
+          <span class="pill">Jira</span>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card bg-white bg-opacity-10 border border-white border-opacity-25 text-white">
+          <div class="card-body">
+            <div class="fw-semibold">Work Term Details</div>
+            <div class="small opacity-90 mt-2">Start date: <strong class="text-white">May 25</strong></div>
+            <div class="small opacity-90">Location: <strong class="text-white">Remote</strong> (Toronto-based team)</div>
+            <div class="small opacity-90">Role: <strong class="text-white">Data Analyst</strong></div>
+            <div class="small opacity-90">Project responsibility: <strong class="text-white">Analytics Lead</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Introduction -->
+  <section id="intro" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Abstract / Introduction</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                This website serves as my official co-op work term report for the <strong>Summer 2026</strong> term at the University of Guelph.
+                It covers my second work term at <strong>Momentum Worldwide</strong>, where I returned as a <strong>Data Analyst</strong> and took on
+                greater responsibility for client-facing analytics work.
+              </p>
+
+              <p>
+                My main assignment was a project for <strong>WorkMoney</strong>, a nonprofit focused on financial empowerment. The goal was to turn
+                website and member-engagement data into a weekly executive dashboard. I worked across discovery, metric definition, data validation,
+                dashboard development, quality assurance, client feedback, documentation, and handoff. As the term progressed, I became the project's
+                day-to-day analytics lead and handled most of the build from end to end, while the user-interface wireframes were developed by a teammate.
+              </p>
+
+              <p class="mb-0">
+                I also completed the <strong>Claude Certified Architect – Foundations</strong> certification. Together, the certification and the
+                WorkMoney project taught me how technical systems, business questions, data limitations, and communication must work together. This report
+                explains how I grew from completing assigned technical tasks to owning a complete client deliverable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="images/abstract.png" alt="Salesforce logo" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> The main analytics stack was Google Tag Manager, Google Analytics, and Data Studio (formerly Looker Studio)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Employer -->
+  <section id="employer" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Information About the Employer</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="images/employer.png" alt="Momentum company logo" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> Momentum Worldwide, a Toronto-based consulting team.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                <strong>Momentum Worldwide</strong> is a consulting firm that delivers Salesforce, data, analytics, automation, and artificial-intelligence
+                solutions. Its work includes Salesforce implementations and data migration, business-process improvement, analytics reporting, and support
+                for clients that need to make better use of their systems and information.
+              </p>
+
+              <p>
+                The company works at the intersection of several areas of computer science. Client projects require an understanding of data structures,
+                cloud platforms, system integration, quality assurance, visualization, and increasingly, <strong>agentic AI</strong>: AI systems designed
+                to use tools and complete multi-step work under defined rules. During this term, Momentum was also investing in Claude training and certification,
+                which gave me a structured way to study AI architecture while applying related ideas in a professional environment.
+              </p>
+
+              <p class="mb-0">
+                Momentum's small-team environment gave me direct access to senior staff and client stakeholders. Work was organized through <strong>Jira</strong>,
+                regular internal check-ins, and weekly client meetings. That structure made progress and blockers visible, but the size of the team also meant
+                that I had to work independently, explain my decisions, and take ownership when a task moved from research into delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Goals</h2>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">What were your goals / learning outcomes for this work term?</h5>
+          <p class="mb-2">My three formal learning goals were:</p>
+
+          <ul class="mb-0">
+            <li class="mb-2">
+              <strong>Technological Literacy:</strong>
+              Complete the <strong>Claude Certified Architect – Foundations</strong> certification and develop production-oriented knowledge of agentic AI,
+              orchestration, Claude Code, the Agent SDK, and the Model Context Protocol (MCP).
+            </li>
+            <li class="mb-2">
+              <strong>Global Understanding:</strong>
+              Better understand how workplace AI can support data migration, data cleanup, field mapping, quality checks, and repeatable business processes.
+              The original measure of success was completing a data migration with Claude's assistance.
+            </li>
+            <li>
+              <strong>Personal Learning Goal:</strong>
+              Improve my understanding of Salesforce CRM and its data architecture through a structured study plan, with the
+              <strong>Salesforce Platform App Builder</strong> certification as the intended measure of success.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">Did you develop goals relating to your job tasks?</h5>
+              <p class="mb-0">
+                Yes. The goals reflected Momentum's work in Salesforce, data, and AI. The Claude certification connected directly to the company's investment
+                in AI-assisted workflows. The Salesforce goals matched the migration work I had supported during my previous term. However, my main assignment
+                this term became the WorkMoney analytics project, so the exact connection changed: I used AI most heavily for research, requirements analysis,
+                documentation, and checking complex analytics logic rather than for completing a Salesforce migration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">What skills did you want to learn? How will these benefit your next work experience?</h5>
+              <p>
+                I wanted to deepen my technical knowledge of AI and Salesforce, but I also wanted to become better at turning an unclear business need into
+                a working technical deliverable.
+              </p>
+              <p>
+                The WorkMoney project helped me learn how to ask better questions, define metrics precisely, test whether data can support a claim, and explain
+                limitations without making the result unusable. I also became more comfortable running client discussions, prioritizing feedback, and making
+                decisions when several technically valid options existed.
+              </p>
+              <p class="mb-0">
+                These skills will help in future software, data, or AI roles because they apply beyond any one platform. I will be able to enter an unfamiliar
+                system, understand the real problem, evaluate the available evidence, build a practical solution, and communicate what the solution can and
+                cannot reliably do.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">What technologies did you want to work with and why?</h5>
+              <p>
+                My learning plan focused on <strong>Claude</strong>, <strong>Claude Code</strong>, the <strong>Agent SDK</strong>, and <strong>MCP</strong>
+                because I wanted a more rigorous understanding of how AI systems use tools, divide work, manage context, and produce reliable structured output.
+                The certification gave me a framework for thinking about those systems rather than treating AI as only a chat interface.
+              </p>
+              <p class="mb-0">
+                In the client project, I worked mainly with <strong>Google Analytics 4</strong>, <strong>Google Tag Manager</strong>, and
+                <strong>Data Studio</strong>. I wanted to understand the full path from website behavior and event instrumentation to an executive-facing chart.
+                Working across that path showed me that a dashboard is only as trustworthy as its definitions, filters, event setup, and documented limitations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">Reflecting on your goals, what goals did you complete?</h5>
+              <p>
+                I fully completed my first goal by passing the <strong>Claude Certified Architect – Foundations</strong> exam. I can now explain core ideas such
+                as orchestration, tool design, MCP integration, context management, structured output, and reliability in a way that connects to practical work.
+              </p>
+              <p>
+                I also made meaningful progress toward the broader intent of my second goal. I used Claude to help organize source material, compare requirements,
+                test reasoning, and support documentation during a real client engagement. This showed me both the speed AI can provide and the need to verify its
+                output against source data and the client's actual business rules.
+              </p>
+              <p class="mb-0">
+                Beyond the formal goals, I completed a major practical objective: I led the analytics implementation of a six-page executive dashboard through
+                review, correction, sign-off, and client handoff.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+	        <!-- Claude Certificate -->
+      <div class="row g-4 mt-1">
+        <div class="col-lg-6 mx-auto">
+          <div class="card p-3">
+            <img
+			  src="images/claude-certificate.png"
+			  alt="Claude Certified Architect – Foundations certificate awarded to Tony Nguyen"
+			  class="img-fluid rounded-4 border d-block mx-auto"
+			  style="width: 100%; max-width: 560px; height: auto; background: #fff;"
+			>
+            <div class="caption mt-2 text-center">
+              <strong>Image:</strong> Claude Certified Architect – Foundations.
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="fw-bold">What goals were you not successful in completing and why?</h5>
+              <p>
+                I did not complete the exact success measure for my second goal because I did not finish a Salesforce data migration using Claude during this term.
+                My responsibilities shifted toward the WorkMoney analytics project, where AI was useful but the work was centered on GA4, GTM, Data Studio, and
+                executive reporting rather than migration.
+              </p>
+              <p class="mb-0">
+                I also did not complete the <strong>Salesforce Platform App Builder</strong> certification. Preparing for and passing the Claude certification,
+                followed by the time required to lead the dashboard build and respond to client feedback, became the higher priority. I still consider Salesforce
+                an important area for continued learning, but the certification remains a future goal rather than a completed outcome from this term.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Job Description -->
+  <section id="job" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Job Description</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                My role at <strong>Momentum Worldwide</strong> was <strong>Data Analyst</strong>. My main assignment was WorkMoney's weekly executive analytics
+                dashboard, built in Data Studio using website data from GA4 and instrumentation information from GTM.
+              </p>
+
+              <p>
+                I began by learning how WorkMoney's website, campaigns, tools, and sign-up paths worked. I reviewed existing reports and documentation, helped refine
+                the project scope, and translated stakeholder questions into metric definitions and dashboard requirements. The work required more than building
+                charts because the source data contained inconsistent event names, incomplete parameters, known periods of inflated traffic, and measures that
+                looked similar but counted different things.
+              </p>
+
+              <p class="mb-2">My main responsibilities included:</p>
+              <ul>
+                <li>Reviewing GA4 and GTM data to determine which measures were reliable enough to report</li>
+                <li>Defining metrics, filters, data-trust labels, and explanations for known limitations</li>
+                <li>Building and refining a <strong>six-page Data Studio dashboard</strong> for weekly executive use</li>
+                <li>Reconciling differences between event counts, user counts, sign-up measures, and campaign reporting</li>
+                <li>Implementing date controls, comparisons, calculated fields, blended data, and page-level interactions</li>
+                <li>Participating in client meetings and converting feedback into concrete design and logic changes</li>
+                <li>Documenting dashboard components and completing the final ownership handoff</li>
+              </ul>
+
+              <p class="mb-0">
+                Over the course of the term, I became the project's day-to-day analytics lead. I handled most of the work from requirements through implementation
+                and handoff, with the visual wireframes and user-interface direction provided by a teammate. The most interesting part of the job was balancing
+                technical correctness with usability: leadership needed a report that was simple enough to review weekly, while I needed to ensure that every
+                number had a defensible definition and an appropriate caveat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="images/jobdescription.png" alt="Overview of a data analyst at Momentum" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> From client questions and imperfect analytics data to a visual wireframe.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusions -->
+  <section id="conclusion" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Conclusions</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                If someone were asked to describe this work term, I would want them to say that it shows a transition from supporting technical work to owning it.
+              </p>
+
+              <p>
+                My first term at Momentum taught me how careful data preparation supports a successful system. This second term taught me what happens after the data
+                exists: people must agree on what it means, decide whether it can be trusted, and turn it into something that supports action. A polished chart can
+                still be misleading if its definition is unclear or its source data is weak.
+              </p>
+
+              <p>
+                Passing the Claude Architect certification strengthened my understanding of AI systems, but the WorkMoney project also taught me an equally important
+                lesson: AI output must remain grounded in source evidence, human judgment, and the real constraints of the system being analyzed.
+              </p>
+
+              <p class="mb-0">
+                The most valuable outcome of this term was confidence. I learned that I can enter an unfamiliar domain, work through uncertainty, communicate directly
+                with a client, and carry a substantial deliverable from discovery to handoff. Those skills will remain useful whether my next role is in software
+                engineering, data, analytics, Salesforce, or AI.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="images/conclusion.png" alt="Learnings from working as a data analyst" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> The final page one of the Data Studio report after wireframe feedback
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acknowledgments -->
+  <section id="ack" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Acknowledgments</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                I would like to thank my supervisor, <strong>Matthew Skogstad-Stubbs</strong>, and the Momentum Worldwide team for giving me the opportunity to
+                return for a second work term and take on greater responsibility. Their support gave me room to learn, make decisions, and grow into the project-lead
+                role over the course of the WorkMoney engagement.
+              </p>
+
+              <p>
+                I am also grateful to <strong>Kaitlyn</strong> for the dashboard wireframes and design guidance, which gave the build a clear visual direction, and to
+                <strong>Jenny Whiley</strong> at WorkMoney for sharing the business context, answering detailed questions, and providing thoughtful feedback throughout
+                the project.
+              </p>
+
+              <p class="mb-0">
+                Finally, I appreciate everyone at Momentum who supported my Claude certification preparation and helped when technical issues disrupted my original exam
+                schedule. That encouragement made completing a difficult certification while delivering client work much more manageable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="images/acknowledgement.png" alt="Thank You card to team at Momentum" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> The people who provided trust, context, feedback, and support throughout the term.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer py-4">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div class="small text-body-secondary">
+      © Tony Nguyen — Co-op Work Term Report 2
+    </div>
+    <a class="small text-decoration-none" href="#top" style="color: var(--sf-blue-dark); font-weight: 700;">
+      Back to top ↑
+    </a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
